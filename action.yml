@@ -9,4 +9,4 @@ runs:
   steps:
     - name: Add macOS certs
       shell: bash
-      run: chmod +x ./add-macos-certs.sh && ./add-macos-certs.sh
+      run: ${GITHUB_ACTION_PATH}/add-macos-certs.sh
