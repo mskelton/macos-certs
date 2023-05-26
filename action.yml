@@ -1,0 +1,12 @@
+name: macOS Certs
+description: GitHub action to create a keychain and import macOS certificates for publishing macOS apps.
+author: Mark Skelton
+branding:
+  icon: lock
+  color: orange
+runs:
+  using: "composite"
+  steps:
+    - name: Add macOS certs
+      shell: bash
+      run: chmod +x ./add-macos-certs.sh && ./add-macos-certs.sh
